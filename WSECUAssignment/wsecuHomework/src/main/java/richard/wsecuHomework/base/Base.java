@@ -38,7 +38,6 @@ public class Base {
 	public static void initialize() {
 		ChromeOptions opt = new ChromeOptions();
 		DesiredCapabilities cap = new DesiredCapabilities();
-//		opt.addArguments("--remote-allow-origins=*");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		cap.setCapability(ChromeOptions.CAPABILITY,opt);
 		int timeout = Integer.valueOf(prop.getProperty("impTimeout"));

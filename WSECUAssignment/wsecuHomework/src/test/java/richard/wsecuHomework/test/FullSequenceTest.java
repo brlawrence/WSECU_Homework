@@ -34,10 +34,12 @@ public void sequence1() throws Exception {
 	String incorrectPasswordInput = "thispasswillfailforsure";
 	String actualMessage = "", actualURL = "";
 	
+	// Initial page - entering incorrect user name
 	lp.userName().click();
 	lp.userName().sendKeys(userNameInput);
 	lp.signInButton().click();
 	
+	// Landing page - entering incorrect password
 	rp.passwordInput().click();
 	rp.passwordInput().sendKeys(incorrectPasswordInput);
 	rp.signInButton().click();
