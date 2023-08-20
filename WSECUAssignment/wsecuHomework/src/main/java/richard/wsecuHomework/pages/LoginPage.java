@@ -14,4 +14,10 @@ public class LoginPage extends Base {
 	public WebElement signInButton() {
 		return (driver.findElement(By.xpath("//form/input[@type='submit' and @class='button']")));
 	}
+	
+	public void signIn(String userNameInput) {
+	userName().click();
+	userName().sendKeys(userNameInput);
+	signInButton().click();
+	}
 }

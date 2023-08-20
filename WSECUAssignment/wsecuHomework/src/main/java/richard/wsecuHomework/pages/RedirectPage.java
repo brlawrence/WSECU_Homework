@@ -19,4 +19,9 @@ public class RedirectPage extends Base {
 		return (driver.findElement(By.xpath("//div[contains(text(),'incorrect username')]")));
 	}
 	
+	public void passwordEntry(String pwd) {
+		passwordInput().click();
+		passwordInput().sendKeys(pwd);
+		signInButton().click();
+	}
 }
